@@ -1,0 +1,21 @@
+# Runtime evidence, identities, keys, certificates, receipts, and local Fabric state
+.phase2_runtime/
+network-artifacts/
+wallet/
+
+# Scratch content-addressed store written by scripts/generate_phase2_results.py.
+# The generated report/JSON themselves (outputs/phase2_results.md, .json) ARE
+# committed on purpose so the paper can cite a stable, checked-in results file.
+outputs/_run_evidence/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environment files must be made from templates and never committed
+.env
+*.pem
+*.key
+*.crt
+*.p12

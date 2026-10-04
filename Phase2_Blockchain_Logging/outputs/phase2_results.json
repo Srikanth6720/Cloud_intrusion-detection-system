@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-09-17T19:20:55.899Z",
+  "num_events_processed": 120,
+  "alert_source": "synthetic_phase1_shaped",
+  "phase1_digest_agreement": {
+    "vector_source": "/home/user/workspace/005/Phase_1/outputs/10_contract/hash_test_vectors.json",
+    "spec_version": "1.0.0",
+    "vectors_checked": 6,
+    "vectors_agreeing": 6,
+    "independent_implementations_agree": true,
+    "digest_fields": [
+      "event_id",
+      "schema_version",
+      "timestamp",
+      "verdict",
+      "threat_class",
+      "confidence",
+      "model_version",
+      "src_ip",
+      "src_port",
+      "dst_ip",
+      "dst_port",
+      "cloud_resource_id",
+      "feature_digest"
+    ]
+  },
+  "benchmark": {
+    "events_processed": 60,
+    "elapsed_sec": 0.5668854310001734,
+    "measured_throughput_eps": 105.84149233495056,
+    "latency_ms_p50": 9.42033800038189,
+    "latency_ms_p95": 9.527330149876434,
+    "latency_ms_p99": 9.98242340996512,
+    "latency_ms_max": 10.292173999914667
+  },
+  "required_tx_per_sec_calc": {
+    "peak_events_per_sec": 10000,
+    "anchoring_rate": 0.1143,
+    "unbatched_tx_per_sec": 1143.0,
+    "batch_factor_100_tx_per_sec": 11.43,
+    "min_batch_factor_for_1000_tps": 2
+  },
+  "storage": {
+    "sample_size": 120,
+    "on_chain_bytes_mean": 771.45,
+    "on_chain_bytes_max": 779,
+    "off_chain_bytes_mean": 1270.0083333333334,
+    "reduction_pct": 39.25630409249283
+  },
+  "integrity": {
+    "audited_count": 85,
+    "verified_count": 85,
+    "failure_rate_pct": 0.0,
+    "tamper_injection_detected": true
+  },
+  "icr_sweep": [
+    {
+      "gate": 0.0,
+      "integrity_coverage_ratio": 1.0,
+      "on_chain_volume": 1.0,
+      "attack_count": 102
+    },
+    {
+      "gate": 0.5,
+      "integrity_coverage_ratio": 0.8333333333333334,
+      "on_chain_volume": 0.7083333333333334,
+      "attack_count": 102
+    },
+    {
+      "gate": 0.75,
+      "integrity_coverage_ratio": 0.8333333333333334,
+      "on_chain_volume": 0.7083333333333334,
+      "attack_count": 102
+    },
+    {
+      "gate": 0.9,
+      "integrity_coverage_ratio": 0.8333333333333334,
+      "on_chain_volume": 0.7083333333333334,
+      "attack_count": 102
+    },
+    {
+      "gate": 0.95,
+      "integrity_coverage_ratio": 0.8333333333333334,
+      "on_chain_volume": 0.7083333333333334,
+      "attack_count": 102
+    },
+    {
+      "gate": 0.99,
+      "integrity_coverage_ratio": 0.8333333333333334,
+      "on_chain_volume": 0.7083333333333334,
+      "attack_count": 102
+    }
+  ],
+  "icr_at_gate": {
+    "gate": 0.95,
+    "integrity_coverage_ratio": 0.8333333333333334,
+    "on_chain_volume": 0.7083333333333334,
+    "attack_count": 102
+  },
+  "digest_agreement": {
+    "python_vectors_total": 6,
+    "python_vectors_matched": 6,
+    "python_agreement_pct": 100.0,
+    "go_implementation_present": true,
+    "go_independently_executed": false
+  },
+  "model_provenance": {
+    "anchored": false,
+    "model_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+    "traceable": false
+  },
+  "non_repudiation": {
+    "signature_pass": 85,
+    "signature_checks": 85,
+    "forged_signature_rejected": true
+  }
+}
